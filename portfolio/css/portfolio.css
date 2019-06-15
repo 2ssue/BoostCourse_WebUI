@@ -1,0 +1,114 @@
+@charset "ko";
+
+body{
+	font-family: '나눔 고딕', NanumGothic, '돋움', Dotum, sans-serif;
+	margin: 0;
+}
+
+header{
+	height: 120px;
+	background-color: #000;
+}
+
+header > p{
+	height: 120px;
+	width: 1040px;
+	margin: auto;
+	padding-left: 40px;
+	font-size: 40px;
+	color: #fff;
+	font-weight: bold;
+}
+
+.root{
+	margin:auto;
+	width: 1080px;
+}
+
+.contents{
+	margin: 0 40px;
+}
+
+nav{
+	height: 33px;
+	margin: 40px 0;
+	width: 1000px;
+}
+
+.button{
+	float: left;
+	display: inline-block;
+	border: 1px solid #d1d1d1;
+	font-size: 16px;
+	color: #000;
+	text-align: center;
+	height: 33px;
+	width: 322px;
+	text-decoration: none;
+}
+
+.button:hover{
+	border: 1px solid #454545;
+	font-weight: bold;
+}
+
+.button:nth-child(1){
+	margin-right: 14px;
+}
+
+.button:nth-child(2){
+	margin-right: 14px;
+}
+
+.table_title{
+	margin-top: 40px;
+	clear: left;
+	font-weight: bold;
+	font-size: 20px;
+	color: #000;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #454545;
+}
+
+.box{
+	margin: 30px 0;
+}
+
+.box:last-child{
+	margin-bottom: 40px;
+}
+
+.box > div:nth-child(1){
+	background-color: #f7f7f7;
+	border: 1px solid #d1d1d1;
+	color: #333;
+	font-size: 16px;
+	font-weight: bold;
+	padding-left: 15px;
+	height: 46px;
+}
+
+.box> div:nth-child(2){
+	padding: 30px;
+	color: #000;
+	font-size: 12px;
+	border: 1px solid #d1d1d1;
+	border-top: none;
+}
+
+footer{
+	padding: 15px;
+	clear: left;
+	border-top: 1px solid #d1d1d1;
+}
+
+footer > div{
+	color: #999;
+	font-size: 12px;
+	text-align: center;
+}
+
+.copyright{
+	padding-top: 5px;
+	color: #000;
+}
