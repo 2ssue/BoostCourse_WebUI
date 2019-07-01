@@ -11,35 +11,152 @@
 				포트폴리오
 			</h1>
 		</header>
-		<div class="root">
+		<main role="main" class="main">
 			<div class="contents">
 				<nav>
 					<a href="#table" class="button">테이블 요소</a>
 					<a href="#form" class="button">폼 요소</a>
 					<a href="#list" class="button">리스트 요소</a>
 				</nav>
-				<div class="table_title">
+				<h2 class="contents_title">
 					구성요소
-				</div>
+				</h2>
 				<div class="tables">
 					<div class="box" id="table">
-						<div>테이블 요소</div>
-						<div>콘텐츠 영역</div>
+						<h3 class="table__title">테이블 요소</h3>
+						<div class="table__content">
+							<h4 class="content__subtitle">아동 사이즈</h4>
+							<table class="kid-size">
+								<tbody>
+									<tr>
+										<th colspan="2" class="col__division">구분</th>
+										<th colspan="2" class="col__default">Small</th>
+										<th colspan="2" class="col__default">Medium</th>
+										<th colspan="2" class="col__default">Large</th>
+										<th class="col__x-large">X-Large</th>
+									</tr>
+									<tr>
+										<td rowspan="3" class="kid-size__subtitle">
+											미국 남아<br>
+											[Boys 2-7]
+										</td>
+										<td class="kid-size__subtitle">사이즈</td>
+										<td>2T</td>
+										<td>3T</td>
+										<td>4T</td>
+										<td>4</td>
+										<td>5</td>
+										<td>6</td>
+										<td>7</td>
+									</tr>
+									<tr>
+										<td class="kid-size__subtitle">키</td>
+										<td>84-91</td>
+										<td>91-99</td>
+										<td>91-99</td>
+										<td>99-107</td>
+										<td>107-114</td>
+										<td>114-122</td>
+										<td>122-130</td>
+									</tr>
+									<tr>
+										<td class="kid-size__subtitle">몸무게</td>
+										<td>13-15</td>
+										<td>14-15</td>
+										<td>13-15</td>
+										<td>14-15</td>
+										<td>19-21</td>
+										<td>20-23</td>
+										<td>23-25</td>
+									</tr>
+									<tr>
+										<td rowspan="3" class="kid-size__subtitle">
+											미국 여아<br>
+											[Girls 2-6X]
+										</td>
+										<td class="kid-size__subtitle">사이즈</td>
+										<td>2T</td>
+										<td>3T</td>
+										<td>4T</td>
+										<td>4</td>
+										<td>5</td>
+										<td>6</td>
+										<td>6X</td>
+									</tr>
+									<tr>
+										<td class="kid-size__subtitle">키</td>
+										<td>84-91</td>
+										<td>91-99</td>
+										<td>91-99</td>
+										<td>99-107</td>
+										<td>107-114</td>
+										<td>114-122</td>
+										<td>122-130</td>
+									</tr>
+									<tr>
+										<td class="kid-size__subtitle">몸무게</td>
+										<td>13-15</td>
+										<td>14-15</td>
+										<td>13-15</td>
+										<td>14-15</td>
+										<td>19-21</td>
+										<td>20-23</td>
+										<td>23-25</td>
+									</tr>
+								</tbody>
+							</table>
+							<h4 class="content__subtitle">환불 가능 금액 조회</h4>
+							<table class="refund">
+								<tbody>
+									<tr>
+										<th class="col__division">구분</th>
+										<th class="col__default">환불가능액</th>
+										<th class="col__default">수수료</th>
+										<th class="col__default">총 환불금액</th>
+									</tr>
+									<tr>
+										<td>게임 보상금액</td>
+										<td>100,000원</td>
+										<td>1,000원</td>
+										<td>99,000원</td>
+									</tr>
+									<tr>
+										<td>월정액제 보상금액</td>
+										<td>10,000원</td>
+										<td>5,000원</td>
+										<td>5,000원</td>
+									</tr>
+									<tr>
+										<td>코인</td>
+										<td>9,000원</td>
+										<td>500원</td>
+										<td>8,500원</td>
+									</tr>
+									<tr>
+										<td>총합계</td>
+										<td>119,000원</td>
+										<td>6,500원</td>
+										<td>112,500원</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
 					</div>
 					<div class="box" id="form">
-						<div>폼 요소</div>
-						<div>콘텐츠 영역</div>
+						<h3 class="table__title">폼 요소</h3>
+						<div class="table__content">콘텐츠 영역</div>
 					</div>
 					<div class="box" id="list">
-						<div>리스트 요소</div>
-						<div>콘텐츠 영역</div>
+						<h3 class="table__title">리스트 요소</h3>
+						<div class="table__content">콘텐츠 영역</div>
 					</div>
 				</div>
 			</div>
-		</div>
+		</main>
 		<footer>
 			<div>
-				주소: 경기도 화성시, E-MAIL: e2ssue@gmail.com
+				<address>주소: 경기도 화성시</address>,
+				<a href="mailto:e2ssue@gmail.com">E-MAIL: e2ssue@gmail.com</a>
 			</div>
 			<div class="copyright">
 				Copyright © Su Jeong Lee. All Rights Reserved.
