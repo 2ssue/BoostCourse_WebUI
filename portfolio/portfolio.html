@@ -144,7 +144,78 @@
 					</div>
 					<div class="box" id="form">
 						<h3 class="table__title">폼 요소</h3>
-						<div class="table__content">콘텐츠 영역</div>
+						<div class="table__content">
+							<h4 class="content__subtitle">회원가입</h4>
+							<form class="sign-up">
+								<section>
+									<h5 class="content__subtitle">아이디</h5>
+									<input type="text" name="id" class="input__default">
+								</section>
+								<section>
+									<h5 class="content__subtitle">비밀번호</h5>
+									<input type="password" name="pw" class="input__default">
+								</section>
+								<section>	
+									<h5 class="content__subtitle">이름</h5>
+									<input type="text" name="name" class="input__default">
+								</section>
+								<section>
+									<h5 class="content__subtitle">생년월일</h5>
+									<input type="number" min="1900" max="2019" name="year" placeholder="년도" class="input__birth">
+									<input type="number" min="1" max="12" name="month" placeholder="월" class="input__birth">
+									<input type="number" min="1" max="31" name="day" placeholder="일" class="input__birth">
+								</section>
+								<section>
+									<h5 class="content__subtitle">성별</h5>
+									<span><input type="radio" name="gender" value="man">남자</span>
+									<span><input type="radio" name="gender" value="woman">여자</span>
+								</section>
+								<section>
+									<h5 class="content__subtitle">이메일</h5>
+									<input type="email" name="email" placeholder="이메일 주소에 '@'를 포함해주세요." class="input__default">
+								</section>	
+								<section>
+								<h5 class="content__subtitle">휴대전화</h5>
+									<div>
+										<input type="tel" name="cell_phone" placeholder="숫자만 입력해주세요." class="input__cell-phone">
+										<button name="auth" id="auth">인증번호 받기</button>
+									</div>
+									<input type="text" name="auth_num" placeholder="인증번호를 입력해주세요." class="input__default">
+								</section>
+								<section>
+									<h5 class="content__subtitle">취미</h5>
+									<span>
+										<input type="checkbox" name="hobby" value="exercise">운동
+									</span>
+									<span>
+										<input type="checkbox" name="hobby" value="cook">요리
+									</span>
+									<span>
+										<input type="checkbox" name="hobby" value="travel">여행
+									</span>
+									<span>
+										<input type="checkbox" name="hobby" value="game">게임
+									</span>
+									<span>
+										<input type="checkbox" name="hobby" value="computer">컴퓨터
+									</span>
+									<span>
+										<input type="checkbox" name="hobby" value="music">음악
+									</span>
+									<span>
+										<input type="checkbox" name="hobby" value="movie">영화
+									</span>
+									<span>
+										<input type="checkbox" name="hobby" value="reading">독서
+									</span>
+								</section>
+								<section>
+									<h5 class="content__subtitle">가입인사</h5>
+									<input type="text" name="hello" id="hello">
+								</section>
+								<button type="submit" name="sign_up" id="sign-button">가입하기</button>
+							</form>
+						</div>
 					</div>
 					<div class="box" id="list">
 						<h3 class="table__title">리스트 요소</h3>
