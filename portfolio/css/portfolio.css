@@ -95,26 +95,19 @@ nav{
 	font-weight: bold;
 }
 
+caption{
+	text-align: left;
+}
+
 .kid-size{
+	border-collapse: collapse;
 	border-spacing: 0;
 	font-size: 12px;
 	color: #555;
 	table-layout: fixed;
 }
 
-.kid-size .col__division{
-	width: 30%;
-}
-
-.kid-size .col__default{
-	width: 10%;
-}
-
-.kid-size .col__x-large{
-	width: 15%;
-}
-
-.kid-size *{
+.kid-size thead *, .kid-size tbody *{
 	padding: 1em 0;
 	border: 1px solid #e4e4e4;
 	text-align: center;
@@ -134,9 +127,10 @@ nav{
 	font-size: 12px;
 	color: #555;
 	table-layout: fixed;
+	border-collapse: collapse;
 }
 
-.refund *{
+.refund thead *, .refund tbody *{
 	padding: 1em 0;
 	text-align: center;
 }
@@ -147,21 +141,19 @@ nav{
 	background-color: #fbfbfb;
 }
 
-.refund .col__division{
-	width: 30%;
-}
-
-.refund .col__default{
-	width: 10%;
-}
-
-.refund tbody :nth-child(5) td{
+.refund tbody :nth-child(4) td{
+	font-weight: bold;
 	border-top: 1px solid #a5a5a5;
 	border-bottom:1px solid #e4e4e4;
 }
 
+.refund tbody td:nth-child(n+2){
+	padding-right: 50px;
+	text-align: right;
+}
+
 .table__content{
-	padding: 30px;
+	padding: 27px;
 	color: #000;
 	font-size: 12px;
 	border: 1px solid #d1d1d1;
@@ -193,7 +185,7 @@ nav{
 	height: 2.5em;
 }
 
-#auth{
+.auth{
 	height: calc(2.5em + 2px);
 	width: 24.1%;
 }
@@ -215,14 +207,15 @@ nav{
 	border: 1px solid #08a600;
 	background-color: #4ec53d;
 	color: #fff;
+	cursor: pointer;
 }
 
-#hello{
+.hello{
 	width: -webkit-fill-available;
 	height: 8em;	
 }
 
-#sign-button{
+.sign-button{
 	margin-top: 1em;
 	width: 100%;
 	height: 2.5em;
@@ -294,6 +287,74 @@ nav{
 
 .information li{
 	margin-bottom: 10px;
+}
+
+.news{
+	border: 1px solid #e4e4e4;
+	padding: 0 2em;
+}
+
+.news article>a{
+	text-decoration: none;
+}
+
+.article{
+	margin-left: 10px;
+	display: inline-block;
+	width: calc(100% - 100px);
+	word-break: keep-all;
+}
+
+.non-img{
+	width: 100%;
+}
+
+.article h5{
+	font-size: 14px;
+	color: #00c;
+	font-weight: bold;
+}
+
+.webtoon{
+	border: 1px solid #e4e4e4;
+	padding: 20px 20px 0 0;
+}
+
+.webtoon h5{
+	font-size: 14px;
+	color: #000;
+	font-weight: bold;
+	margin: 5px 0;
+}
+
+.toon-page{
+	margin-left: 20px;
+	display: inline-block;
+	margin-bottom: 20px;
+}
+
+.toon-page a{
+	text-decoration: none;
+}
+
+.toon-page a:hover{
+	text-decoration: underline;
+}
+
+.cut-toon{
+	border: 1px solid #71b036;
+	background-color: #80c83d;
+	font-size: 10px;
+	color: #fff;
+	margin-right: 5px;
+}
+
+.smart-toon{
+	border: 1px solid #df4e28;
+	background-color: #ec5336;
+	font-size: 10px;
+	color: #fff;
+	margin-right: 5px;
 }
 
 footer{

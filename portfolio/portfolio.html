@@ -11,7 +11,7 @@
 				포트폴리오
 			</h1>
 		</header>
-		<main role="main" class="main">
+		<main class="main">
 			<div class="contents">
 				<nav>
 					<a href="#table" class="button">테이블 요소</a>
@@ -25,16 +25,31 @@
 					<div class="box" id="table">
 						<h3 class="table__title">테이블 요소</h3>
 						<div class="table__content">
-							<h4 class="content__subtitle">아동 사이즈</h4>
 							<table class="kid-size">
-								<tbody>
+								<caption>
+									<h4 class="content__subtitle">아동 사이즈</h4>
+								</caption>
+								<colgroup>
+									<col width="300px"/>
+									<col width="10%"/>
+									<col width="10%"/>
+									<col width="10%"/>
+									<col width="10%"/>
+									<col width="10%"/>
+									<col width="10%"/>
+									<col width="10%"/>
+									<col width="15%"/>
+								</colgroup>
+								<thead>
 									<tr>
-										<th colspan="2" class="col__division">구분</th>
-										<th colspan="2" class="col__default">Small</th>
-										<th colspan="2" class="col__default">Medium</th>
-										<th colspan="2" class="col__default">Large</th>
-										<th class="col__x-large">X-Large</th>
+										<th colspan="2">구분</th>
+										<th colspan="2">Small</th>
+										<th colspan="2">Medium</th>
+										<th colspan="2">Large</th>
+										<th>X-Large</th>
 									</tr>
+								</thead>
+								<tbody>
 									<tr>
 										<td rowspan="3" class="kid-size__subtitle">
 											미국 남아<br>
@@ -105,15 +120,25 @@
 									</tr>
 								</tbody>
 							</table>
-							<h4 class="content__subtitle">환불 가능 금액 조회</h4>
 							<table class="refund">
-								<tbody>
+								<caption>
+									<h4 class="content__subtitle">환불 가능 금액 조회</h4>
+								</caption>
+								<colgroup>
+									<col width="30%"/>
+									<col width="10%"/>
+									<col width="10%"/>
+									<col width="10%"/>
+								</colgroup>
+								<thead>
 									<tr>
 										<th class="col__division">구분</th>
 										<th class="col__default">환불가능액</th>
 										<th class="col__default">수수료</th>
 										<th class="col__default">총 환불금액</th>
 									</tr>
+								</thead>
+								<tbody>
 									<tr>
 										<td>게임 보상금액</td>
 										<td>100,000원</td>
@@ -148,72 +173,72 @@
 							<h4 class="content__subtitle">회원가입</h4>
 							<form class="sign-up">
 								<section>
-									<h5 class="content__subtitle">아이디</h5>
-									<input type="text" name="id" class="input__default">
+									<h5 class="content__subtitle"><label for="id">아이디</label></h5>
+									<input type="text" id="id" name="id" class="input__default">
 								</section>
 								<section>
-									<h5 class="content__subtitle">비밀번호</h5>
-									<input type="password" name="pw" class="input__default">
+									<h5 class="content__subtitle"><label for="pw">비밀번호</label></h5>
+									<input type="password" id="pw" name="pw" class="input__default">
 								</section>
 								<section>	
-									<h5 class="content__subtitle">이름</h5>
-									<input type="text" name="name" class="input__default">
+									<h5 class="content__subtitle"><label for="name">이름</label></h5>
+									<input type="text" id="name" name="name" class="input__default">
 								</section>
 								<section>
-									<h5 class="content__subtitle">생년월일</h5>
-									<input type="number" min="1900" max="2019" name="year" placeholder="년도" class="input__birth">
-									<input type="number" min="1" max="12" name="month" placeholder="월" class="input__birth">
-									<input type="number" min="1" max="31" name="day" placeholder="일" class="input__birth">
+									<h5 class="content__subtitle"><label for="year">생년월일</label></h5>
+									<input type="number" min="1900" max="2019" name="year" placeholder="년도" id="year" class="input__birth">
+									<input type="number" id="month" min="1" max="12" name="month" placeholder="월" class="input__birth">
+									<input type="number" id="day" min="1" max="31" name="day" placeholder="일" class="input__birth">
 								</section>
 								<section>
 									<h5 class="content__subtitle">성별</h5>
-									<span><input type="radio" name="gender" value="man">남자</span>
-									<span><input type="radio" name="gender" value="woman">여자</span>
+									<span><input id="man" type="radio" name="gender" value="man"><label for="man">남자</label></span>
+									<span><input type="radio" id="woman" name="gender" value="woman"><label for="woman">여자</label></span>
 								</section>
 								<section>
-									<h5 class="content__subtitle">이메일</h5>
-									<input type="email" name="email" placeholder="이메일 주소에 '@'를 포함해주세요." class="input__default">
+									<h5 class="content__subtitle"><label for="email">이메일</label></h5>
+									<input type="email" id="email" name="email" placeholder="이메일 주소에 '@'를 포함해주세요." class="input__default">
 								</section>	
 								<section>
-								<h5 class="content__subtitle">휴대전화</h5>
+								<h5 class="content__subtitle"><label for="phone">휴대전화</label></h5>
 									<div>
-										<input type="tel" name="cell_phone" placeholder="숫자만 입력해주세요." class="input__cell-phone">
-										<button name="auth" id="auth">인증번호 받기</button>
+										<input id="phone" type="tel" name="cell_phone" placeholder="숫자만 입력해주세요." class="input__cell-phone">
+										<button name="auth" class="auth">인증번호 받기</button>
 									</div>
 									<input type="text" name="auth_num" placeholder="인증번호를 입력해주세요." class="input__default">
 								</section>
 								<section>
 									<h5 class="content__subtitle">취미</h5>
 									<span>
-										<input type="checkbox" name="hobby" value="exercise">운동
+										<input type="checkbox" id="exercise" name="hobby" value="exercise"><label for="exercise">운동</label>
 									</span>
 									<span>
-										<input type="checkbox" name="hobby" value="cook">요리
+										<input type="checkbox" id="cook" name="hobby" value="cook"><label for="cook">요리</label>
 									</span>
 									<span>
-										<input type="checkbox" name="hobby" value="travel">여행
+										<input type="checkbox" id="travel" name="hobby" value="travel"><label for="travel">여행</label>
 									</span>
 									<span>
-										<input type="checkbox" name="hobby" value="game">게임
+										<input type="checkbox" id="game" name="hobby" value="game"><label for="game">게임</label>
 									</span>
 									<span>
-										<input type="checkbox" name="hobby" value="computer">컴퓨터
+										<input type="checkbox" id="computer" name="hobby" value="computer"><label for="computer">컴퓨터</label>
 									</span>
 									<span>
-										<input type="checkbox" name="hobby" value="music">음악
+										<input type="checkbox" name="hobby" id="music" value="music"><label for="music">음악</label>
 									</span>
 									<span>
-										<input type="checkbox" name="hobby" value="movie">영화
+										<input type="checkbox" name="hobby" id="movie" value="movie"><label for="movie">영화</label>
 									</span>
 									<span>
-										<input type="checkbox" name="hobby" value="reading">독서
+										<input type="checkbox" name="hobby" value="reading" id="reading"><label for="reading">독서</label>
 									</span>
 								</section>
 								<section>
-									<h5 class="content__subtitle">가입인사</h5>
-									<input type="text" name="hello" id="hello">
+									<h5 class="content__subtitle"><label for="hello">가입인사</label></h5>
+									<input type="text" id="hello" name="hello" class="hello">
 								</section>
-								<button type="submit" name="sign_up" id="sign-button">가입하기</button>
+								<button type="submit" name="sign_up" class="sign-button">가입하기</button>
 							</form>
 						</div>
 					</div>
@@ -238,7 +263,7 @@
 							</article>
 							<article>
 								<h4 class="content__subtitle">실시간 검색어</h4>
-								<section class="current-search">
+								<div class="current-search">
 									<div>
 										<span class="rank">1</span>
 										<a href="https://search.naver.com/search.naver?sm=top_hty&fbm=1&ie=utf8&query=%EC%97%AC%EB%A6%84%ED%9C%B4%EA%B0%80">여름 휴가</a>
@@ -279,11 +304,11 @@
 										<span class="rank">10</span>
 										<a href="https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=%EB%B3%B4%EB%82%B4%EC%A3%BC%EC%84%B8%EC%9A%94&oquery=%EC%9C%A0%EA%B8%89%ED%9C%B4%EA%B0%80&tqi=Uew6Gsp0Jy0sslardCNssssstb8-169701">보내주세요</a>
 									</div>
-								</section>
+								</div>
 							</article>
 							<article>
 								<h4 class="content__subtitle">쿠키 이용안내</h4>
-								<section class="information">
+								<div class="information">
 									<ul>
 										<li>
 											<span class="blue-font">웹툰 작품</span>은 쿠키를 사용하여 대여/구매 하실 수 있습니다.
@@ -302,7 +327,91 @@
 											<a href="" class="blue-font">쿠키 이용약관</a>
 										</li>
 									</ul>
-								</section>
+								</div>
+							</article>
+							<article>
+								<h4 class="content__subtitle">뉴스</h4>
+								<div class="news">
+									<article>
+										<a href="https://2ssue.github.io">
+											<img src="./image/thumbnail1.jpg" alt="">
+										</a>
+										<div class="article">
+											<a href="https://2ssue.github.io"><h5>[날씨] 내일도 35도 안팎 폭염·내륙 소나기…습도 높아 후텁지근</h5></a>
+											<p>
+												오늘은 입추 절기지만 가을은 아직 멀리있는 것 같습니다. 일부 내륙에는 소나기가 지났지만 소나기도 더위의 기세를 누그러뜨리진 못했는데요. 동해안을 제외한 전국 대부분 지방에 폭염 특보가 이어지는 가운데 내일도 한낮에 서울과 대전 35도, 광주와 대구가 36도까지 오를 것으로 예상됩니다. 내일도 대기가 불안정해지면서 오후에 내륙에는 소나기가 지나는 곳이 있겠습니다. 	
+											</p>
+										</div>
+										<hr>
+									</article>
+									<article>
+										<div class="article non-img">
+											<a href="https://2ssue.github.io"><h5>[펫카드] 강아지 중성화가 필요한 이유</h5></a>
+											<p>
+												(서울=뉴스1) 최서윤 기자, 방은영 디자이너 = 강아지 중성화 수술을 놓고 찬반이 팽팽하게 엇갈린다. 많은 사람들은 사람들과 공존하려면 개체수 조절을 위해 필요하다고 주장한다. 그러나 어떤 사람들은 인위적인 수술은 안된다며 반대한다. 
+											</p>
+										</div>
+										<hr>
+									</article>
+									<article>
+										<a href="https://2ssue.github.io">
+											<img src="./image/thumbnail1.jpg" alt="">
+										</a>
+										<div class="article">
+											<a href="https://2ssue.github.io"><h5>다이어트에 좋은 여름 복숭아, 먹으면 안 되는 사람 있어</h5></a>
+											<p>
+												복숭아가 제철이다. 여름 복숭아는 다양한 건강 효과를 낸다. 복숭아에는 포도당, 과당, 수분이 풍부하고 유기산(산성을 띠는 물질로 식품에서 신맛을 냄)이 0.5% 정도로 적게 들어 단맛이 강하다. 복숭아의 열량은 100g당 36kcal다. 복숭아 한 개에 약 100kcal 정도다. 포만감에 비해 열량이 적은 편이어서 다이어트를 하는 사람에게도 좋다. 비타민이 많아서 피로 해소에 도움이 된다. 
+											</p>
+										</div>
+									</article>
+								</div>
+							</article>
+							<article>
+								<h4 class="content__subtitle">웹툰</h4>
+								<div class="webtoon">
+									<article class="toon-page">
+										<a href="https://comic.naver.com/webtoon/list.nhn?titleId=644180">
+											<img src="./image/thumbnail2.jpg" alt="">
+											<h5>하루 3컷</h5>
+											<span>17화 편리하게 피곤하게</span>
+										</a>
+									</article>
+									<article class="toon-page">
+										<a href="https://comic.naver.com/webtoon/list.nhn?titleId=651673">
+											<img src="./image/thumbnail2.jpg" alt="">
+											<h5><span class="cut-toon">컷툰</span>유미의 세포들</h5>
+											<span>326화 미래에서 온 텔레파시</span>
+										</a>
+									</article>
+									<article class="toon-page">
+										<a href="https://comic.naver.com/webtoon/list.nhn?titleId=704595">
+											<img src="./image/thumbnail2.jpg" alt="">
+											<h5>이말년씨리즈 2018</h5>
+											<span>58화 공포의 떡볶이</span>
+										</a>
+									</article>
+									<article class="toon-page">
+										<a href="https://comic.naver.com/webtoon/list.nhn?titleId=119874">
+											<img src="./image/thumbnail2.jpg" alt="">
+											<h5><span class="smart-toon">스마트툰</span>덴마</h5>
+											<span>195화 1.다이크(195)</span>
+										</a>
+									</article>
+									<article class="toon-page">
+										<a href="https://comic.naver.com/webtoon/list.nhn?titleId=703835">
+											<img src="./image/thumbnail2.jpg" alt="">
+											<h5><span class="cut-toon">컷툰</span>1인용 기분</h5>
+											<span>20화 평가</span>
+										</a>
+									</article>
+									<article class="toon-page">
+										<a href="https://comic.naver.com/webtoon/list.nhn?titleId=698247">
+											<img src="./image/thumbnail2.jpg" alt="">
+											<h5>찬란하지 않아도 괜찮아</h5>
+											<span>56화 숨길 수 없어요.</span>
+										</a>
+									</article>
+								</div>
 							</article>
 						</div>
 					</div>
