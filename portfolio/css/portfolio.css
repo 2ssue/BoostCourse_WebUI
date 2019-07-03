@@ -200,7 +200,6 @@ nav{
 
 .sign-up input{
 	color: #000;
-	font-size: 12px;
 	margin-bottom: 10px;
 }
 
@@ -228,6 +227,73 @@ nav{
 	width: 100%;
 	height: 2.5em;
 	font-size: 16px;
+}
+
+.search-console{
+	border: 1px solid #e4e4e4;
+	padding: 3em;
+}
+
+.search-console h5{
+	color: #000;
+	font-size: 32px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 0;
+}
+
+.search-console h6{
+	display: inline;
+}
+
+.blue-font{
+	color: #559bfa;
+}
+
+.current-search{
+	border: 1px solid #e4e4e4;
+	padding: 10px 10px 0 10px;
+	width: 200px;
+}
+
+.current-search div{
+	margin-bottom: 10px;
+}
+
+.current-search a{
+	color: #000;
+	text-decoration: none;
+}
+
+.current-search a:hover{
+	text-decoration: underline;
+}
+
+.rank{
+	border: 1px solid #e0e0e0;
+	font-size: 10px;
+	color: #666;
+	width: 13px;
+	height: 13px;
+	text-align: center;
+	display: inline-block;
+}
+
+.information{
+	border: 1px solid #e4e4e4;
+	padding: 10px;
+}
+
+.red-font{
+	color: #ec5336;
+}
+
+.information li:nth-child(1){
+	font-weight: bold;
+}
+
+.information li{
+	margin-bottom: 10px;
 }
 
 footer{
